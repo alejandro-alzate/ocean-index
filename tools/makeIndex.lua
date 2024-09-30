@@ -72,13 +72,61 @@ local function crawlFolder(path)
 	return result
 end
 
+--- Writes a file with contents to disk nothing fancy.
+--- @param filename string path to file
+--- @param content string contents to write to the file
+--- @return nil
+local function writeToFile(filename, content)
+	local file = io.open(filename, "w")
+	if file then
+		file:write(content)
+		file:close()
+	else
+		print("Error writing the file: " .. tostring(filename))
+	end
+end
+
+--- Takes a file read in binary mode and computes an md5 checksum on it
+--- @param filename string path where is located the file
+--- @return string|nil checksum Returns an MD5 checksum if the file was read, nil otherwise
+local function computeChecksum(filename)
+	local file = io.open(filename, "rb")
+	if not file then return nil end
+
+	local content = file:read("*a")
+	file:close()
+
+	return md5.sumhexa(content)
+end
+
+
 -- Main function
 local function main()
 	local folder = arg[1] or "../.oceanmanifests"
+	local indexPrettyPath = "../index-pretty.lua"
+	local indexCompactPath = "../index.lua"
 	local results = crawlFolder(folder)
 
+	-- Make the index file
+	local prettyOutput = "return " .. serpent.block(results, { comment = false })
+	local compactOutput = "return " .. serpent.line(results, { comment = false })
+
+	writeToFile(indexPrettyPath, prettyOutput)
+	writeToFile(indexCompactPath, compactOutput)
+
+	-- Compute checksums
+	local indexPrettyChecksum = computeChecksum(indexPrettyPath)
+	local indexCompactChecksum = computeChecksum(indexCompactPath)
+
+	-- Write those checksums
+	writeToFile(indexPrettyPath .. ".md5", tostring(indexPrettyChecksum))
+	writeToFile(indexCompactPath .. ".md5", tostring(indexCompactChecksum))
+
 	-- Print the result as a table
-	print(serpent.block(results, { comment = false }))
+	print("index:", compactOutput)
+
+	local checksums = { indexPrettyChecksum, indexCompactChecksum }
+	print("index checksums:", serpent.block(checksums, { comment = false }))
 end
 
 main()

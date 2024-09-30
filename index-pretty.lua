@@ -21,34 +21,35 @@ return {
   Lovox = {
     latest = {
       ["manifest.lua"] = {
-        author = "",
+        author = "Keyslam",
         description = {
           detailed = "",
           homepage = "",
-          summary = ""
+          summary = "A set of modules to load and render voxels in Love2d"
         },
-        package = "",
+        package = "Lovox",
         source = {
-          url = ""
+          url = "https://github.com/Keyslam/Lovox"
         },
-        version = ""
+        version = "latest"
       }
     }
   },
   Menori = {
     latest = {
       ["manifest.lua"] = {
-        author = "",
+        author = "rozenmad",
         description = {
-          detailed = "",
+          detailed = "			Menori\n			LÖVE library for 3D rendering based on scene graph. Support glTF 2.0 (implemented: meshes, materials, textures, skins, skeletons, animations). Assets may be provided either in JSON (.gltf) or binary (.glb) format.\n			Works on LÖVE 11.4 and higher.\n		",
           homepage = "",
-          summary = ""
+          summary = "Library for 3D rendering with LÖVE. "
         },
-        package = "",
+        love = ">= 11.4",
+        package = "Menori",
         source = {
-          url = ""
+          url = "https://github.com/rozenmad/Menori"
         },
-        version = ""
+        version = "latest"
       }
     }
   },
@@ -227,17 +228,17 @@ return {
   ["love-gltf"] = {
     latest = {
       ["manifest.lua"] = {
-        author = "",
+        author = "Kyle mclamb",
         description = {
           detailed = "			A partial loader for glTF 2.0 assets.\n			To install, copy the gltf folder into your project. you should also have a copy of cpml.\n			All public methods are in the API Documentation.\n			Everything else should be considered private and subject to wild changes at any time.\n			MIT license, (c) kyle mclamb.\n			",
           homepage = "",
           summary = ""
         },
-        package = "",
+        package = "love-gltf",
         source = {
           url = "https://gitlab.com/Alloyed/love-gltf"
         },
-        version = ""
+        version = "latest"
       }
     }
   },

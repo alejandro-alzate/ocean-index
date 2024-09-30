@@ -10,6 +10,10 @@ local oceanspec = {
 		summary = "Ocean the love package manager",
 		detailed = [[Ocean is a simple package manager for your
 		love applications and games]]
+	},
+
+	dependencies = {
+
 	}
 
 }

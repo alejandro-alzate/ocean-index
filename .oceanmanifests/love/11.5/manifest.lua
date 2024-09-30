@@ -32,7 +32,7 @@ local oceanspec = {
 	--It's love.
 	--love = ">=11.0 < 12",
 
-	dependency = {
+	dependencies = {
 		-- None, self contained. :)
 	}
 

@@ -2,7 +2,7 @@
 
 local oceanspec = {
 	package = "love",
-	author = "alejandro-alzate",
+	author = "love2d",
 	version = "11.5",
 	source = {
 		url = "https://github.com/love2d/love"

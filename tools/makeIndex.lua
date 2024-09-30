@@ -47,7 +47,8 @@ local function loadFile(path)
 	local res, msg = pcall(
 		function()
 			assert(type(result.package) == "string", "type(result.package) == 'string'")
-			result.package = string.lower(result.package)
+			-- Dropped lowercase enforcement
+			--result.package = string.lower(result.package)
 
 			assert(type(result.author) == "string", "type(result.author) == 'string'")
 
@@ -145,7 +146,7 @@ local function main()
 	writeToFile(indexCompactPath .. ".md5", tostring(indexCompactChecksum))
 
 	-- Print the result as a table
-	print("index:", prettyOutput)
+	-- print("index:", prettyOutput)
 
 	local checksums = { indexPrettyChecksum, indexCompactChecksum }
 	print("index checksums:", serpent.block(checksums, { comment = false }))

@@ -1,7 +1,7 @@
 local oceanspec = {
 	package = "bump-3dpd",
 	author = "oniietzschan",
-	version = "1.0",
+	version = "0.2.0",
 	source = {
 		url = "https://github.com/oniietzschan/bump-3dpd/"
 	},

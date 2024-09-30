@@ -1,7 +1,7 @@
 local oceanspec = {
 	package = "ocean",
 	author = "KiwiSky & alejandro-alzate",
-	version = "1.0",
+	version = "0.1",
 	source = {
 		url = "https://github.com/alejandro-alzate/ocean/"
 	},

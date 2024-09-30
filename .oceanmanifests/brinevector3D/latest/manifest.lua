@@ -1,7 +1,7 @@
 local oceanspec = {
 	package = "3DreamEngine",
 	author = "3dreamengine",
-	version = "main",
+	version = "latest",
 	source = {
 		url = "https://github.com/3dreamengine/3DreamEngine"
 	},

@@ -1,7 +1,7 @@
 local oceanspec = {
 	package = "ocean",
 	author = "alejandro-alzate",
-	version = "1.0",
+	version = "latest",
 	source = {
 		url = "https://github.com/alejandro-alzate/language-lua"
 	},

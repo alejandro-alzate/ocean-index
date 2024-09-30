@@ -11,11 +11,11 @@ return {
           summary = "3DreamEngine is an *awesome* 3d engine for LÖVE."
         },
         love = ">=11.0, <12",
-        package = "3dreamengine",
+        package = "3DreamEngine",
         source = {
           url = "https://github.com/3dreamengine/3DreamEngine"
         },
-        version = "main"
+        version = "latest"
       }
     }
   },
@@ -34,11 +34,11 @@ return {
         jit = "unknown",
         love = ">=11.0, <12",
         lua = "unknown",
-        package = "3dreamengine",
+        package = "3DreamEngine",
         source = {
           url = "https://github.com/3dreamengine/3DreamEngine"
         },
-        version = "main"
+        version = "latest"
       }
     }
   },
@@ -57,7 +57,24 @@ return {
         source = {
           url = "https://github.com/oniietzschan/bump-3dpd/"
         },
-        version = "1.0"
+        version = "0.2.0"
+      }
+    }
+  },
+  gfxTables = {
+    latest = {
+      ["manifest.lua"] = {
+        author = "alejandro-alzate",
+        dependencies = {},
+        description = {
+          detailed = "Have you ever been jealous of how pretty SQL consoles prints? Here gfxTables to help you!",
+          summary = "Have you ever been jelaous of how pretty SQL prints? Here is gfxTables to help you!"
+        },
+        package = "gfxTables",
+        source = {
+          url = "https://github.com/alejandro-alzate/gfxTables.lua"
+        },
+        version = "latest"
       }
     }
   },
@@ -74,7 +91,7 @@ return {
         source = {
           url = "https://github.com/alejandro-alzate/language-lua"
         },
-        version = "1.0"
+        version = "latest"
       }
     }
   },
@@ -119,7 +136,24 @@ return {
         source = {
           url = "https://github.com/alejandro-alzate/ocean/"
         },
-        version = "1.0"
+        version = "0.1"
+      }
+    }
+  },
+  srt = {
+    ["1.0.0-0"] = {
+      ["manifest.lua"] = {
+        author = "KiwiSky & alejandro-alzate",
+        dependencies = {},
+        description = {
+          detailed = "A pure lua library to for SubRip (SRT) file parsing",
+          summary = "A crappy SRT file parser that i made on my own when i wasn't able to find a good one"
+        },
+        package = "srt",
+        source = {
+          url = "https://github.com/alejandro-alzate/srt-lua/"
+        },
+        version = "1.0.0-0"
       }
     }
   },

@@ -1,7 +1,7 @@
 -- This is a demostration of a beta package manager for lua and love.
 
 local oceanspec = {
-	package = "Whale",
+	package = "whale",
 	author = "KiwiSky & Alejandro Alzate",
 	version = "0.1",
 	source = {

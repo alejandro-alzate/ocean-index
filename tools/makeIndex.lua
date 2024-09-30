@@ -43,6 +43,28 @@ local function loadFile(path)
 		return nil
 	end
 
+	--Let's spam assert
+	local res, msg = pcall(
+		function()
+			assert(type(result.package) == "string", "type(result.package) == 'string'")
+			result.package = string.lower(result.package)
+
+			assert(type(result.author) == "string", "type(result.author) == 'string'")
+
+			assert(type(result.version) == "string" or type(result.version) == "number",
+				"type(result.package) == 'string' or type(result.version) == 'number'")
+			result.version = tostring(result.version)
+
+			assert(type(result.description) == "table", "type(result.description) == 'table'")
+			assert(type(result.dependencies) == "table", "type(result.dependencies) == 'table'")
+		end
+	)
+
+	if type(result) ~= "table" then
+		print("Malformed field manifest from " .. tostring(path) .. ":" .. tostring(msg))
+		return nil
+	end
+
 	return result
 end
 

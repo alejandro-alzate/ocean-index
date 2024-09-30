@@ -5,6 +5,7 @@ local lfs = require("lfs")
 local utils = require("utils")
 local loadFile = require("loader")
 local isDir = utils.isDir
+local getFileSize = utils.getFileSize
 local writeToFile = utils.writeToFile
 local computeChecksum = utils.computeChecksum
 
@@ -60,7 +61,22 @@ local function main()
 	-- print("index:", prettyOutput)
 
 	local checksums = { indexPrettyChecksum, indexCompactChecksum }
-	print("index checksums = " .. serpent.block(checksums, { comment = false }))
+	print("Index checksums = " .. serpent.block(checksums, { comment = false }))
+
+	-- Compare the sizes of the two index files
+	local prettySize = getFileSize(indexPrettyPath)
+	local compactSize = getFileSize(indexCompactPath)
+
+	if prettySize and compactSize then
+		local fatCut = prettySize - compactSize
+		local ratio = compactSize / prettySize * 100
+		print(string.format("Size of index-pretty.lua: %d bytes", prettySize))
+		print(string.format("Size of index.lua: %d bytes", compactSize))
+		print(string.format("Total fat cut: %d bytes", fatCut))
+		print(string.format("Compresion ratio: %d%%", ratio))
+	else
+		print("Could not determine sizes of index files.")
+	end
 end
 
 main()

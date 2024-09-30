@@ -2,6 +2,20 @@ local md5 = require("md5")
 local lfs = require("lfs")
 local utils = {}
 
+--- Function to get the size of a file
+--- @param path string Path to the file.
+--- @return number|nil Size of the file in bytes, or nil if an error occurred.
+function utils.getFileSize(path)
+	local file = io.open(path, "rb")
+	if not file then
+		print("Error opening file: " .. path)
+		return nil
+	end
+	local size = file:seek("end") -- Get the size of the file
+	file:close()
+	return size
+end
+
 --- Checks if a path is a directory
 --- @param path string Path to check.
 --- @return boolean isdir True when is a directory false otherwise.

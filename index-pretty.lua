@@ -5,7 +5,7 @@ return {
         author = "3dreamengine",
         dependencies = {},
         description = {
-          detailed = "			Features\n\n		    - Easy to use yet powerful 3D extension to LÖVE\n			- Fast forward rendering with alpha pass\n			- Metalness workflow (albedo, normal, roughness, metallic, ao, emission)\n			- HDR with bloom\n			- Refractions, specular and diffuse reflections\n			- Screen space ambient occlusion (ssao)\n			- Particle batches and sprites\n			- Particle/foliage systems\n			- Simple custom shaders\n			- Eye adaption effect\n			- Cascade directional shadow mapping\n			- Point shadow mapping\n			- Smooth shadows\n			- Distance fog\n			- Godrays\n			- Included shaders for wind animation, water, ...\n			- Supports .obj, .glb, .gltf, .dae and .vox\n			- Threaded texture loading\n			- Optional high performance file format to minimize loading times\n			- Included optimized vec2, vec3, vec4, mat2, mat3 and mat4 library\n			- Box2D extension to support basic 3D physics\n			- Dynamic clouds, sun, moon, stars and rainbows\n		",
+          detailed = "			Features\n\n			- Easy to use yet powerful 3D extension to LÖVE\n			- Fast forward rendering with alpha pass\n			- Metalness workflow (albedo, normal, roughness, metallic, ao, emission)\n			- HDR with bloom\n			- Refractions, specular and diffuse reflections\n			- Screen space ambient occlusion (ssao)\n			- Particle batches and sprites\n			- Particle/foliage systems\n			- Simple custom shaders\n			- Eye adaption effect\n			- Cascade directional shadow mapping\n			- Point shadow mapping\n			- Smooth shadows\n			- Distance fog\n			- Godrays\n			- Included shaders for wind animation, water, ...\n			- Supports .obj, .glb, .gltf, .dae and .vox\n			- Threaded texture loading\n			- Optional high performance file format to minimize loading times\n			- Included optimized vec2, vec3, vec4, mat2, mat3 and mat4 library\n			- Box2D extension to support basic 3D physics\n			- Dynamic clouds, sun, moon, stars and rainbows\n		",
           homepage = "https://discord.gg/hpmZxNQ",
           license = "3DreamEngine is an *awesome* 3d engine for LÖVE. ",
           summary = "3DreamEngine is an *awesome* 3d engine for LÖVE."
@@ -25,7 +25,7 @@ return {
         author = "3dreamengine",
         dependencies = {},
         description = {
-          detailed = "		brinevector3D\n\n		A simple vector lua library for everyone for 3D!\n		This is a fork of the brinevector (2D only)\n		Motivation\n\n		I personally like brinevector, because it uses ffi to make\n		structs for vectors instead of using tables, which makes\n		it faster and more efficient, but I also need this for\n		bump3dpd which needs x,y,z.\n\n		Compatibility\n		BrineVector3D was written for LOVE2D and is accelerated by\n		the ffi module in luajit, but can be used for any luajit program.\n		",
+          detailed = "			brinevector3D\n\n			A simple vector lua library for everyone for 3D!\n			This is a fork of the brinevector (2D only)\n			Motivation\n\n			I personally like brinevector, because it uses ffi to make\n			structs for vectors instead of using tables, which makes\n			it faster and more efficient, but I also need this for\n			bump3dpd which needs x,y,z.\n\n			Compatibility\n			BrineVector3D was written for LOVE2D and is accelerated by\n			the ffi module in luajit, but can be used for any luajit program.\n		",
           homepage = "https://discord.gg/hpmZxNQ",
           license = "3DreamEngine is an *awesome* 3d engine for LÖVE. ",
           summary = "A simple ffi-accelerated vector library for everyone with support for z-axis"
@@ -85,7 +85,7 @@ return {
         dependencies = {},
         description = {
           detailed = "A pure lua library for management of strings geared towards localization purposes.",
-          summary = " A pure lua language manager geared to use on user interfaces whether is a game or a productivity tool with capability of hotswaping"
+          summary = "A pure lua language manager geared to use on user interfaces whether is a game or a productivity tool with capability of hotswaping"
         },
         package = "ocean",
         source = {
@@ -129,7 +129,7 @@ return {
         author = "alejandro-alzate",
         dependencies = {},
         description = {
-          detailed = "			Yeah intensional typo is a word game of LÖVE2D and Documentation now getting serious, Here you can find a copy of LÖVE2D wiki easy for clone. Feel free to clone it to your machine.\n			To do so, use the following command:\n\n			git clone git@github.com:alejandro-alzate/love2doc.git\n\n			Or just click that juicy green button named \"Code\" then in the underwhelming grey \"Download ZIP\" button.\n\n			Unzip if you Downloaded it via ZIP and open index.html And off to the races!\n\n			Happy coding everybody!\n			",
+          detailed = "			Yeah intensional typo is a word game of LÖVE2D and Documentation now getting serious,\n			Here you can find a copy of LÖVE2D wiki easy for clone. Feel free to clone it to your machine.\n			To do so, use the following command:\n\n			git clone git@github.com:alejandro-alzate/love2doc.git\n\n			Or just click that juicy green button named \"Code\" then in the underwhelming grey \"Download ZIP\" button.\n\n			Unzip if you Downloaded it via ZIP and open index.html And off to the races!\n\n			Happy coding everybody!\n			",
           homepage = "",
           summary = "yeah intensional typo is a word game of LÖVE2D and Documentation. Grab a copy and start developing offline! "
         },

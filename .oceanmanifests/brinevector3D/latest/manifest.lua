@@ -28,7 +28,7 @@ local oceanspec = {
 		license = "3DreamEngine is an *awesome* 3d engine for LÖVE. ",
 	},
 
-	love = ">=11.0, <12",
+	love = ">=11.x",
 	lua = "unknown",
 	ffi = "unknown",
 	jit = "unknown",

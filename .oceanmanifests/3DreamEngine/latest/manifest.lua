@@ -37,10 +37,8 @@ local oceanspec = {
 		homepage = "https://discord.gg/hpmZxNQ",
 		license = "3DreamEngine is an *awesome* 3d engine for LÖVE. ",
 	},
-	love = ">=11.0, <12",
 
-	dependencies = {
-	}
+	love = ">=11.x",
 
 }
 

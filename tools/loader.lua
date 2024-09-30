@@ -45,7 +45,9 @@ local function loadFile(path)
 			result.version = tostring(result.version)
 
 			assert(type(result.description) == "table", "type(result.description) == 'table'")
-			assert(type(result.dependencies) == "table", "type(result.dependencies) == 'table'")
+
+			--why bother with pure lua.
+			--assert(type(result.dependencies) == "table", "type(result.dependencies) == 'table'")
 		end
 	)
 

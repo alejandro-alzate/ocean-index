@@ -12,10 +12,6 @@ local oceanspec = {
 		love applications and games]]
 	},
 
-	dependencies = {
-
-	}
-
 }
 
 return oceanspec

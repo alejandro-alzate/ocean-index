@@ -25,17 +25,6 @@ local oceanspec = {
 		homepage = "love2d.org",
 		license = "https://github.com/love2d/love/blob/main/license.txt",
 	},
-
-	--It's love.
-	--lua = ">= 5.1, < 5.4",
-
-	--It's love.
-	--love = ">=11.0 < 12",
-
-	dependencies = {
-		-- None, self contained. :)
-	}
-
 }
 
 return oceanspec

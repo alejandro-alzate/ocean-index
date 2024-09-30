@@ -24,16 +24,6 @@ local oceanspec = {
 			]],
 		homepage = "",
 	},
-
-	--The following are not enforced but highly encouraged
-	--love = ""
-	--jit = ""
-	--lua = ""
-
-	dependencies = {
-
-	}
-
 }
 
 return oceanspec

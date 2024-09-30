@@ -11,11 +11,6 @@ local oceanspec = {
 		"A pure lua language manager geared to use on user interfaces whether is a game or a productivity tool with capability of hotswaping",
 		detailed = [[A pure lua library for management of strings geared towards localization purposes.]]
 	},
-
-	dependencies = {
-
-	}
-
 }
 
 return oceanspec

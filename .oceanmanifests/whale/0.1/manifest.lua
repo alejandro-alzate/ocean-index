@@ -13,11 +13,6 @@ local oceanspec = {
 		homepage = "love2d.org",
 		license = "https://github.com/litzKiwiSky/whale/blob/main/LICENSE.md",
 	},
-
-	dependencies = {
-		-- None, self contained. :)
-	}
-
 }
 
 return oceanspec

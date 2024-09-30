@@ -67,9 +67,11 @@ local function main()
 	local prettySize = getFileSize(indexPrettyPath)
 	local compactSize = getFileSize(indexCompactPath)
 
+	print()
+
 	if prettySize and compactSize then
 		local fatCut = prettySize - compactSize
-		local ratio = compactSize / prettySize * 100
+		local ratio = 100 - compactSize / prettySize * 100
 		print(string.format("Size of index-pretty.lua: %d bytes", prettySize))
 		print(string.format("Size of index.lua: %d bytes", compactSize))
 		print(string.format("Total fat cut: %d bytes", fatCut))

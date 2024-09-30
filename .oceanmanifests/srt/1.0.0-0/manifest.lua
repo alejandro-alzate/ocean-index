@@ -11,10 +11,6 @@ local oceanspec = {
 		detailed = [[A pure lua library to for SubRip (SRT) file parsing]]
 	},
 
-	dependencies = {
-
-	}
-
 }
 
 return oceanspec

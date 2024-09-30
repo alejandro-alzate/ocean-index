@@ -1,13 +1,13 @@
 local oceanspec = {
-	package = "",
-	author = "",
-	version = "",
+	package = "Lovox",
+	author = "Keyslam",
+	version = "latest",
 	source = {
-		url = ""
+		url = "https://github.com/Keyslam/Lovox"
 	},
 
 	description = {
-		summary = "",
+		summary = "A set of modules to load and render voxels in Love2d",
 		detailed = [[]],
 		homepage = "",
 	},

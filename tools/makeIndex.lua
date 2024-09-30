@@ -100,7 +100,7 @@ local function computeChecksum(filename)
 end
 
 
--- Main function
+--- Main function
 local function main()
 	local folder = arg[1] or "../.oceanmanifests"
 	local indexPrettyPath = "../index-pretty.lua"
@@ -123,7 +123,7 @@ local function main()
 	writeToFile(indexCompactPath .. ".md5", tostring(indexCompactChecksum))
 
 	-- Print the result as a table
-	print("index:", compactOutput)
+	print("index:", prettyOutput)
 
 	local checksums = { indexPrettyChecksum, indexCompactChecksum }
 	print("index checksums:", serpent.block(checksums, { comment = false }))

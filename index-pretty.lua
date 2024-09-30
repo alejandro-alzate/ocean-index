@@ -1,4 +1,4 @@
-{
+return {
   love = {
     ["11.5"] = {
       ["manifest.lua"] = {

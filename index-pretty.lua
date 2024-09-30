@@ -123,6 +123,24 @@ return {
       }
     }
   },
+  love2doc = {
+    latest = {
+      ["manifest.lua"] = {
+        author = "alejandro-alzate",
+        dependencies = {},
+        description = {
+          detailed = "			Yeah intensional typo is a word game of LÖVE2D and Documentation now getting serious, Here you can find a copy of LÖVE2D wiki easy for clone. Feel free to clone it to your machine.\n			To do so, use the following command:\n\n			git clone git@github.com:alejandro-alzate/love2doc.git\n\n			Or just click that juicy green button named \"Code\" then in the underwhelming grey \"Download ZIP\" button.\n\n			Unzip if you Downloaded it via ZIP and open index.html And off to the races!\n\n			Happy coding everybody!\n			",
+          homepage = "",
+          summary = "yeah intensional typo is a word game of LÖVE2D and Documentation. Grab a copy and start developing offline! "
+        },
+        package = "love2doc",
+        source = {
+          url = "https://github.com/alejandro-alzate/love2doc"
+        },
+        version = "latest"
+      }
+    }
+  },
   ocean = {
     ["0.1"] = {
       ["manifest.lua"] = {

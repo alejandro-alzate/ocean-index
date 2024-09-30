@@ -11,7 +11,7 @@ local oceanspec = {
 		detailed = [[
 			Features
 
-		    - Easy to use yet powerful 3D extension to LÖVE
+			- Easy to use yet powerful 3D extension to LÖVE
 			- Fast forward rendering with alpha pass
 			- Metalness workflow (albedo, normal, roughness, metallic, ao, emission)
 			- HDR with bloom
